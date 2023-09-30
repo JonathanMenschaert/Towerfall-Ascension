@@ -707,8 +707,6 @@ void Player::UpdateBasicMovement(float elapsedSec, const Level& level)
 void Player::Draw() const
 {
 	CopyDirection copyState{ m_CopySprite };
-	
-	//utils::DrawRect(m_Shape.left, m_Shape.bottom, m_Shape.width, m_Shape.height);
 
 	int amount{};
 	if (copyState == CopyDirection::NONE)
@@ -837,7 +835,6 @@ void Player::DrawBow() const
 	glPushMatrix();
 	{		
 		glTranslatef(m_Shape.width * 0.5f, m_Shape.height * 0.6f, 0.f);
-		//utils::DrawPoint(Point2f{}, 4.f);
 		glRotatef(m_AimAngle, 0.f, 0.f, 1.f);
 		
 		if (m_PlayerState == PlayerState::AIMING)

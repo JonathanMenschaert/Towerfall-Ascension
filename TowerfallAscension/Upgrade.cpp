@@ -128,7 +128,6 @@ void Upgrade::Draw() const
 		}
 	}
 	glPopMatrix();
-	//utils::DrawRect(m_Shape);
 }
 
 bool Upgrade::AttemptKill()

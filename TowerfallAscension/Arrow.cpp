@@ -190,8 +190,6 @@ void Arrow::Draw() const
 		glPopMatrix();
 		copyState = CopyDirection::NONE;
 	}
-	//utils::DrawPolygon(m_TransformedVertices);
-	//utils::DrawPoint(m_TransformedLocation, 5.f);
 }
 
 bool Arrow::IsPickUp() const

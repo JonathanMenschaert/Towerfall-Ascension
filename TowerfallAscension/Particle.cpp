@@ -16,12 +16,8 @@ Particle::Particle(const Point2f& position, float size, const Vector2f& speedVec
 
 void Particle::Update(float elapsedSec)
 {
-	//m_SpeedVector += m_MoveVector * elapsedSec;
+	
 	m_Position += m_SpeedVector * elapsedSec;
-	/*if (m_ChangeAlpha)
-	{
-		m_Color.a = (255.f / m_LifeTime) / 255.f * elapsedSec;
-	}*/
 	m_LifeCounter += elapsedSec;
 	if (m_LifeCounter >= m_LifeTime)
 	{

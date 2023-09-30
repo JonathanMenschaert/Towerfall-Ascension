@@ -53,5 +53,4 @@ void Torch::Draw() const
 		}
 	}
 	glPopMatrix();
-	//utils::DrawRect(emitter);
 }

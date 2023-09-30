@@ -17,7 +17,6 @@ Chest::Chest(const Point2f& location, Upgrade::UpgradeType upgrade, ResourceMana
 	:GameObject(resources)
 	,m_ReleaseUpgrade{false}
 	,m_IsUpgradeActive{false}
-	//,m_pUpgrade{new Upgrade(Upgrade::UpgradeType::SHIELD, location)}
 {
 	Vector2f scale{ m_Scale, m_Scale };
 	Texture* pChest{ resources->GetTextureManager()->GetTexture(TextureManager::TextureSheet::UPGRADE_CHEST) };
@@ -64,7 +63,6 @@ void Chest::Draw() const
 		m_pChestTexture->Draw();
 	}
 	glPopMatrix();
-	//utils::DrawRect(m_Shape);
 }
 
 Upgrade* Chest::OpenChest(const Rectf& actorShape)

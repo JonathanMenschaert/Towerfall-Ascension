@@ -62,9 +62,6 @@ private:
 	Vector2f m_Scale;
 	GameData* m_pGameData;
 
-	//Delete
-	//Screen* m_pTest;
-
 	// FUNCTIONS
 	void Initialize( );
 	void Cleanup( );

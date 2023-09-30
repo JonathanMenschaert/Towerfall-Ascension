@@ -83,7 +83,6 @@ void Ghost::Update(float elapsedSec, const Level& level)
 		Enemy::Update(elapsedSec, level);
 		if (!m_IsDead)
 		{
-			//m_pWander->Update(elapsedSec);
 			if (!m_IsSpawnerActive)
 			{
 				m_GhostState = GhostState::WANDER;
@@ -197,7 +196,6 @@ void Ghost::Draw() const
 	}
 
 	CopyDirection copyState{ m_CopySprite };
-	//utils::DrawRect(m_Shape.left, m_Shape.bottom, m_Shape.width, m_Shape.height);
 
 	int amount{};
 	if (copyState == CopyDirection::NONE)

@@ -99,16 +99,6 @@ void Level::DrawForeground() const
 		m_pForegroundTexture->Draw();
 	}
 	glPopMatrix();
-
-	/*for (unsigned int i{}; i < m_Vertices.size(); ++i)
-	{
-		utils::DrawPolygon(m_Vertices[i]);
-	}*/
-
-	/*for (size_t i{}; i < m_FloatingPath.size(); ++i)
-	{
-		utils::FillEllipse(m_FloatingPath[i].x, m_FloatingPath[i].y, 10.f, 10.f);
-	}*/
 }
 
 void Level::DrawScenery() const

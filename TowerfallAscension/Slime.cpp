@@ -70,7 +70,6 @@ void Slime::Update(float elapsedSec, const Level& level)
 		Enemy::Update(elapsedSec, level);
 		if (!m_IsDead)
 		{
-			//m_pWander->Update(elapsedSec);
 			if (!m_IsSpawnerActive)
 			{
 				m_SlimeState = SlimeState::WANDER;
@@ -161,7 +160,6 @@ void Slime::Draw() const
 	}
 
 	CopyDirection copyState{ m_CopySprite };
-	//utils::DrawRect(m_Shape);
 	int amount{};
 	if (copyState == CopyDirection::NONE)
 	{
