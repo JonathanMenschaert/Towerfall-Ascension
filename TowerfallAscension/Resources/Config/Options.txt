@@ -1,0 +1,4 @@
+<SoundOptions
+SfxVolume="80"
+MusicVolume="20"
+/>

@@ -1,0 +1,11 @@
+<LevelPath
+Path="Resources/Levels/xml/SacredGround.txt"
+/>
+
+<LevelPath
+Path="Resources/Levels/xml/SacredGround2.txt"
+/>
+
+<Options
+Path="Resources/Config/Options.txt"
+/>
